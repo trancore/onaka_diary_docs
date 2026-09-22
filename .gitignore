@@ -1,4 +1,8 @@
 node_modules/
 docs/.vitepress/dist/
+
+# Cloudflare Worker local secrets
+workers/support-form/.dev.vars
+workers/support-form/worker-configuration.d.ts
 docs/.vitepress/cache/
 .DS_Store

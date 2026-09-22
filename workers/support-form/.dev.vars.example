@@ -1,0 +1,3 @@
+# ローカル開発用。実値は .dev.vars に保存し、コミットしない。
+GITHUB_TOKEN=
+TURNSTILE_SECRET_KEY=

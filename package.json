@@ -6,9 +6,16 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "support:dev": "wrangler dev --config workers/support-form/wrangler.jsonc",
+    "support:deploy": "wrangler deploy --config workers/support-form/wrangler.jsonc",
+    "support:test": "vitest run --config workers/support-form/vitest.config.ts",
+    "support:types": "wrangler types workers/support-form/worker-configuration.d.ts --config workers/support-form/wrangler.jsonc"
   },
   "devDependencies": {
-    "vitepress": "^1.6.4"
+    "typescript": "^5.9.3",
+    "vitepress": "^1.6.4",
+    "vitest": "^3.2.7",
+    "wrangler": "^4.136.1"
   }
 }

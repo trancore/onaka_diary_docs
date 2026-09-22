@@ -1,0 +1,12 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "onaka-diary-support-form",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-22",
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  "vars": {
+    "ALLOWED_ORIGIN": "https://trancore.github.io",
+    "GITHUB_OWNER": "trancore",
+    "GITHUB_REPOSITORY": "onaka_diary"
+  }
+}

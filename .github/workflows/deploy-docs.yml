@@ -35,6 +35,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Build documentation
+        env:
+          VITE_SUPPORT_API_URL: ${{ vars.SUPPORT_API_URL }}
+          VITE_TURNSTILE_SITE_KEY: ${{ vars.TURNSTILE_SITE_KEY }}
         run: pnpm docs:build
       - name: Setup Pages
         uses: actions/configure-pages@v6.0.0

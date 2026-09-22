@@ -9,6 +9,8 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '使い方', link: '/guide/' },
+      { text: 'サポート', link: '/product/support' },
+      { text: 'プライバシーポリシー', link: '/product/privacy-policy' },
     ],
     sidebar: {
       '/guide/': [
